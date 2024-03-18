@@ -3,16 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Praktikum 4</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div class="card">
-        <img src="assets/gambar.jpg" alt="gambar">
-        <div class="text">
-            <h2>Gambar Lukisan Wajah</h2>
-            <p>Ini adalah gambar lukisan tangan menggunakan pensil di buku gambar yang menggambarkan tentang seorang pria sedang memandang sesuatu yang menarik perhatian nya.</p>
+    <div class="container">
+        <div class="merged-card">
+            <div class="image-container">
+                <img src="assets/gambar.jpg" alt="gambar">
+            </div>
+            <div class="content">
+                <div id="waktu" class="card">
+                    <h2>Real-time</h2>
+                    <p id="realTime"></p>
+                </div>
+                <div class="text">
+                    <h2>Gambar Seseorang Bermain dengan Teman</h2>
+                    <p>Ini adalah gambar potret seseorang yang sedang bermain dengan teman nya di halaman rumah nya.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div id="loginForm">
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" placeholder="username">
+                    <label for="password">Password:</label>
+                    <input type="password" placeholder="password">
+                    <button onclick="Klik()">Login</button>
+                </form>
+            </div>
         </div>
     </div>
+
+    <script>
+        function Klik(){
+            alert("Hai Selamat Datang!!!!");
+        }
+    </script>
+
+    <script src="./script/main.js"></script>
 </body>
 </html>
+
